@@ -1,0 +1,24 @@
+1.Als erstes Rosbridge-Suite installieren
+
+sudo apt-get install ros-noetic-rosbridge-server
+
+
+//*******************************************
+
+2. roslib.js und roslib.min.js in gleichen Ordner wie HTML-File kopieren
+
+//******************************************
+
+3. roscore starten
+
+4. Turtlesim starten:
+
+	rosrun turtlesim turtlesim_node
+	
+5. Rosbridge-Server starten:
+
+	rosrun turtlesim turtlesim_node
+	
+
+6. rosbridge_test.html in Browser aufrufen 
+

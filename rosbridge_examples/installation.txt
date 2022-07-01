@@ -17,7 +17,7 @@ sudo apt-get install ros-noetic-rosbridge-server
 	
 5. Rosbridge-Server starten:
 
-	rosrun turtlesim turtlesim_node
+	roslaunch rosbridge_server rosbridge_websocket.launch
 	
 
 6. rosbridge_test.html in Browser aufrufen 

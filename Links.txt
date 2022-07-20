@@ -6,3 +6,4 @@ https://ros-planning.github.io/moveit_tutorials/doc/controller_configuration/con
 //Github-Projekt UR3 mit Gripper
 https://github.com/trabelsim/UR3_with_Robotiq_gripper_85
 
+https://github.com/cambel/ur3/tree/master/ur_gripper_85_moveit_config

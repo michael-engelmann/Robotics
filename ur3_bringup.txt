@@ -1,0 +1,10 @@
+rosocre
+roslaunch realsense2_camera rs_camera_emr22.launch
+roslaunch emr22 find_object_2d_realsense_world.launch
+
+rosrun emr22 fixed_tf_broadcaster.py
+
+roslaunch ur_robot_driver ur3_bringup.launch robot_ip:=192.168.1.1 kinematics_config:=$(rospack find ur_calibration)/etc/ur3_robot_calibration.yaml
+roslaunch ur3_gripper_moveit_config demo_real_ur3.launch sim:=false limited:=true
+
+/bin/python3 /home/robolab-user/ws_moveit/src/emr22/nodes/05_find_object_2d/grasp_detected_object_8_tf.py

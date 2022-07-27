@@ -1,0 +1,18 @@
+movej
+
+
+1.57 --> 90 Grad
+
+1 Grad --> ca. 0,01744444
+
+
+Home-Postion:
+Basis: 0 Grad
+Schulter: -90 Grad     --> -1.57
+Ellbogen: 0
+Handgelenk 1: -90     
+Handgelenk 2: 0
+Handgelenk 3: 0
+
+
+https://github.com/SintefManufacturing/python-urx

@@ -15,6 +15,12 @@ roslaunch ur3_gripper_moveit_config demo_real_ur3.launch sim:=false limited:=tru
 
 Changes:
 
+in Aufruf der Kamera:
+roslaunch realsense2_camera rs_camera.launch initial_reset:=true depth_fps:=10 infra_fps:=10 color_fps:=10 enable_sync:=true
+
+
+
+
 in /ws_moveit/src/ur3_gripper_moveit_config/config/planning_context.launch:
 
  <!-- Added by ME-->

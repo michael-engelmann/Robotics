@@ -22,3 +22,10 @@ https://github.com/SintefManufacturing/python-urx
 // Gripper
 
 rostopic echo /ur_hardware_interface/io_states    zeigt, dass pin16= digitaler Werkzeugausgang 0, pin17 = digitaler Werkzeugausgang 1
+
+Ansteuern des Grippers mit rostopic pub:
+rostopic pub /ur_hardware_interface/script_command std_msgs/String "data: 'set_tool_digital_out(0,True)'"
+
+Allerdings wird auch hier das Robot Program gestoppt
+
+

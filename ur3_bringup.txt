@@ -1,8 +1,10 @@
-rosocre
-roslaunch realsense2_camera rs_camera_emr22.launch
+roscore
+
+roslaunch realsense2_camera rs_camera.launch initial_reset:=true depth_fps:=10 infra_fps:=10 color_fps:=10 enable_sync:=true
+
 roslaunch emr22 find_object_2d_realsense_world.launch
 
-rosrun emr22 fixed_tf_broadcaster.py
+(rosrun emr22 fixed_tf_broadcaster.py) --> evtl. weglassen
 
 roslaunch ur_robot_driver ur3_bringup.launch robot_ip:=192.168.1.1 kinematics_config:=$(rospack find ur_calibration)/etc/ur3_robot_calibration.yaml
 roslaunch ur3_gripper_moveit_config demo_real_ur3.launch sim:=false limited:=true

@@ -16,3 +16,9 @@ Handgelenk 3: 0
 
 
 https://github.com/SintefManufacturing/python-urx
+
+
+
+// Gripper
+
+rostopic echo /ur_hardware_interface/io_states    zeigt, dass pin16= digitaler Werkzeugausgang 0, pin17 = digitaler Werkzeugausgang 1

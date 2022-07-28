@@ -10,3 +10,15 @@ roslaunch ur_robot_driver ur3_bringup.launch robot_ip:=192.168.1.1 kinematics_co
 roslaunch ur3_gripper_moveit_config demo_real_ur3.launch sim:=false limited:=true
 
 /bin/python3 /home/robolab-user/ws_moveit/src/emr22/nodes/05_find_object_2d/grasp_detected_object_8_tf.py
+
+
+
+Changes:
+
+in /ws_moveit/src/ur3_gripper_moveit_config/config/planning_context.launch:
+
+ <!-- Added by ME-->
+  <group ns="$(arg robot_description)_planning">
+    <param name="shape_transform_cache_lookup_wait_time" value="0.1" />
+    <rosparam command="load" file="$(find ur3_gripper_moveit_config)/config/joint_limits.yaml"/>
+  </group>

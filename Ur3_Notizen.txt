@@ -35,3 +35,7 @@ https://github.com/SintefManufacturing/python-urx
 
 Mit ur_rtde:
 https://sdurobotics.gitlab.io/ur_rtde/api/api.html
+
+ur_rtde unterstützt angeblich das External_Control-urcap
+
+

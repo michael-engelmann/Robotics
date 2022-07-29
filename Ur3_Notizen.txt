@@ -15,7 +15,6 @@ Handgelenk 2: 0
 Handgelenk 3: 0
 
 
-https://github.com/SintefManufacturing/python-urx
 
 
 
@@ -29,3 +28,10 @@ rostopic pub /ur_hardware_interface/script_command std_msgs/String "data: 'set_t
 Allerdings wird auch hier das Robot Program gestoppt
 
 
+Andere Optionen zum Steuern des Universal Robot:
+
+Mit URX: 
+https://github.com/SintefManufacturing/python-urx
+
+Mit ur_rtde:
+https://sdurobotics.gitlab.io/ur_rtde/api/api.html

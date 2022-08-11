@@ -1,0 +1,5 @@
+UR5-Notizen:
+
+Der Inhalt des Gripper.script scheint Python-Code zu sein.
+--> Gripper-Code in Python Datei einbauen und damit den Gripper und Arm steuern?
+

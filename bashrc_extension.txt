@@ -1,0 +1,12 @@
+Ergänzungen in der bashrc:
+
+beim UR3:
+
+export LC_NUMERIC=en_US.UTF-8
+source /opt/ros/noetic/setup.bash
+source ~/ws_moveit/devel/setup.bash
+
+alias matlab='~/matlab/bin/matlab'
+export ROS_PACKAGE_PATH=/opt/ros/noetic/share:~/ws_moveit/src
+export ROS_MASTER_URI=http://192.168.1.10:11311
+export ROS_HOSTNAME=192.168.1.10

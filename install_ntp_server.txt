@@ -1,0 +1,15 @@
+Url: https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/
+
+1.Installing the ntp-server:
+$ sudo apt-get install ntp
+
+2.editing ntp.conf and adding ntp-Servers:
+$ sudo nano /etc/ntp.conf
+
+NTP-Servers under https://support.ntp.org/bin/view/Servers/NTPPoolServers
+
+3.(Re)starting NTP-Server:
+$ sudo service ntp restart
+
+4.Verifying Status of the NTP-Server:
+$sudo service ntp status

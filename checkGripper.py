@@ -1,4 +1,4 @@
-# Python Programm zum Ã–ffnen/SchlieÃŸen des Gripper
+# Python Programm zum Öffnen/Schließen des Gripper
 # author: Michael Engelmann
 # date: 21.7.2022
 
@@ -11,10 +11,10 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
 
 # Socket-Message
-# (0,False)-> Gripper Ã¶ffnen, (0,True)-> Gripper schlieÃŸen
+# (0,False)-> Gripper öffnen, (0,True)-> Gripper schließen
 data = "set_tool_digital_out(0,True)" + "\n"
 
-# Ãœbertragung der Socket-Message
+# Übertragung der Socket-Message
 s.send(data.encode())
 
 data = s.recv(1024)

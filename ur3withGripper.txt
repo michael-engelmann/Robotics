@@ -1,1 +1,3 @@
+in: home/robotiklab2/ws_moveit/src/ur3_gripper_moveit_config/config/
 
+Hinzufügen des Grippers bei den joints in der ros_controllers.yaml

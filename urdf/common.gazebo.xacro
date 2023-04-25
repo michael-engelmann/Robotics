@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <gazebo>
+    <plugin name="ros_control" filename="libgazebo_ros_control.so">
+    </plugin>
+    
+    <!-- https://github.com/JenniferBuehler/gazebo-pkgs/wiki/The-Gazebo-grasp-fix-plugin -->
+    <plugin name="gazebo_grasp_fix" filename="libgazebo_grasp_fix.so">
+        <arm>
+           <arm_name>ur5</arm_name>  <!-- name of this arm. Has to be unique.-->
+
+           <!--  has to be the link to which the finger joints are attached. -->
+            <palm_link>robotiq_85_left_inner_knuckle_link</palm_link>
+            <palm_link>robotiq_85_right_inner_knuckle_link</palm_link>
+           <!-- tags have to include all link names of the gripper/hand which are used to actively grasp objects -->           
+              <gripper_link>robotiq_85_left_finger_tip_link</gripper_link>
+              <gripper_link>robotiq_85_right_finger_tip_link</gripper_link>          
+       </arm>
+       <forces_angle_tolerance>90</forces_angle_tolerance>
+       <update_rate>4</update_rate>
+       <grip_count_threshold>4</grip_count_threshold>
+       <max_grip_count>8</max_grip_count>
+       <release_tolerance>0.003</release_tolerance>
+       <disable_collisions_on_attach>false</disable_collisions_on_attach>
+       <contact_topic>__default_topic__</contact_topic>
+    </plugin>
+  </gazebo>
+</robot>
+
+
+
+<!--
+    <plugin name="gazebo_ros_power_monitor_controller" filename="libgazebo_ros_power_monitor.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>1.0</updateRate>
+      <timeout>5</timeout>
+      <powerStateTopic>power_state</powerStateTopic>
+      <powerStateRate>10.0</powerStateRate>
+      <fullChargeCapacity>87.78</fullChargeCapacity>     
+      <dischargeRate>-474</dischargeRate>
+      <chargeRate>525</chargeRate>
+      <dischargeVoltage>15.52</dischargeVoltage>
+      <chargeVoltage>16.41</chargeVoltage>
+    </plugin>
+-->
